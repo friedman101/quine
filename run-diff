@@ -1,4 +1,4 @@
 #!/bin/bash
 
 rm a.out
-g++ quine.cc && diff <(./a.out) quine.cc
+g++ $1 && diff <(./a.out) $1
